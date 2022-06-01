@@ -1,0 +1,29 @@
+// No copyright file
+// Start of C++ code
+
+#include <iostream>
+#include <time.h>
+// #include <windows.h>
+
+// using namespoace std;
+
+int main() 
+{
+    std::cout << "Warning symbol has been Disabled for this build" << std::endl;
+    srand(time(0));
+    std::string pass;
+
+    std::string data = "abcdefghijklmnopqrstuvwxyz";
+    "ABCDEFGHIJKLMNOPQRSTUVWXZY";
+    "0123456789";
+
+    for (int i = 1; i <= 12; i++)
+    {
+        pass = pass + data[rand() % 93];
+    }
+    std::cout<<"Your generated password is : " <<pass; 
+
+    return 0;
+}
+
+// end C++ code
